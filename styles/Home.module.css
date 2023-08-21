@@ -23,8 +23,6 @@
 
 .footer a {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
 }
 
@@ -106,6 +104,12 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.sectionTitle {
+  color: #222;
+  font-weight: 800;
+  border-bottom: 3px solid rgba(25, 118, 210, 0.25);
 }
 
 @media (max-width: 600px) {
