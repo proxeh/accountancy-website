@@ -33,8 +33,8 @@ export default function HeroImage() {
 							David McElhinney
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom>
-							A chartered accountant based in Paisley, Glasgow. Catering for any
-							and all needs for small businesses.
+							A first year accountant based in Paisley, Glasgow. Catering for
+							any and all needs for small businesses.
 							<br />
 							Click below to see our current services, or{" "}
 							<Link href="/contact-me">click here</Link> to get in touch today!

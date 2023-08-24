@@ -4,7 +4,7 @@ import { Router } from "next/router";
 
 export default function AboutMeBlurb() {
 	return (
-		<Container maxWidth="lg" sx={{ py: "2rem" }}>
+		<Container maxWidth="lg" sx={{ py: "2rem", color: "black" }}>
 			<Typography variant="h4" component="h2">
 				About Me
 			</Typography>

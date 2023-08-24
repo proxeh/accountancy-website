@@ -14,7 +14,7 @@ const Page = ({ name, url, id }) => (
 
 export default function Footer() {
 	return (
-		<Container maxWidth="lg" component="footer" sx={{ py: 2 }}>
+		<Container maxWidth="lg" component="footer" class="footer" sx={{ py: 2 }}>
 			<Grid
 				container
 				maxWidth="lg"

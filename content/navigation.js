@@ -16,7 +16,7 @@ export const pages = [
 	},
 	{
 		name: "Contact Us",
-		url: "/",
+		url: "/contact-me",
 		id: 4,
 	},
 ];
