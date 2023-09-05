@@ -10,7 +10,6 @@ import {
 	Typography,
 } from "@mui/material";
 import { services } from "../../content/services";
-import Link from "next/link";
 import Router from "next/router";
 
 export default function OurServicesCards() {
@@ -33,7 +32,7 @@ export default function OurServicesCards() {
 							const id = Math.floor(Math.random() * 100);
 							return (
 								<Grid item xs={12} md={4} key={index}>
-									<Card>
+									<Card height="100%">
 										<CardMedia
 											component="img"
 											alt={service.name}
@@ -41,7 +40,12 @@ export default function OurServicesCards() {
 											image={`https://picsum.photos/id/${id}/300/200`}
 										/>
 										<CardContent>
-											<Typography gutterBottom variant="h5" component="div">
+											<Typography
+												gutterBottom
+												variant="h5"
+												component="div"
+												fontWeight="600"
+											>
 												{service.name}
 											</Typography>
 											<Typography variant="body2" color="text.secondary">
@@ -62,7 +66,7 @@ export default function OurServicesCards() {
 								</Grid>
 							);
 						})}
-						<Grid item xs={12} justifyItems="center">
+						<Grid item xs={12} textAlign="center">
 							<Button
 								variant="contained"
 								color="success"

@@ -113,7 +113,6 @@ function NavBar() {
 							{pages?.map(MobilePage)}
 						</Menu>
 					</Box>
-					<ShowChartIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 					<Typography
 						variant="h6"
 						noWrap

@@ -1,6 +1,4 @@
 import { Button, Container, Typography } from "@mui/material";
-import Link from "next/link";
-import { Router } from "next/router";
 
 export default function AboutMeBlurb() {
 	return (
@@ -34,8 +32,17 @@ export default function AboutMeBlurb() {
 				blandit cursus, diam lorem tempor turpis, at fringilla neque ipsum vel
 				arcu. Phasellus ornare vel mauris vitae malesuada.{" "}
 			</Typography>
-			<Typography variant="body1" component="p">
-				<Link href="#ourservices">What we do</Link>
+			<Typography variant="body1" component="p" textAlign="center">
+				<Button
+					variant="outlined"
+					color="success"
+					size="large"
+					onClick={() =>
+						document.getElementById("ourservices").scrollIntoView()
+					}
+				>
+					What we offer
+				</Button>
 			</Typography>
 		</Container>
 	);
