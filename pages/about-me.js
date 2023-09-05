@@ -13,7 +13,7 @@ export default function AboutMe() {
 			<main style={{ padding: "2rem 0" }}>
 				<Container maxWidth="lg">
 					<Typography variant="h4" component="h2" sx={{ textAlign: "center" }}>
-						About Us
+						About Me
 					</Typography>
 				</Container>
 			</main>

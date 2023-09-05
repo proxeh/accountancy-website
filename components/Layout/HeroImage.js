@@ -5,7 +5,7 @@ export default function HeroImage() {
 	return (
 		<Box
 			sx={{
-				width: "100vw",
+				width: "100%",
 				minHeight: minHeight,
 				backgroundImage: `url('https://picsum.photos/1440/500?grayscale&blur')`,
 				backgroundPosition: "center center",
@@ -29,11 +29,11 @@ export default function HeroImage() {
 							borderRadius: "1rem",
 						}}
 					>
-						<Typography variant="h4" component="h1" gutterBottom>
-							David McElhinney
+						<Typography variant="h3" component="h1" gutterBottom>
+							David McElhinney Accountancy
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom>
-							A first year accountant based in Paisley, Glasgow. Catering for
+							A first-year accountant based in Paisley, Glasgow. Catering for
 							any and all needs for small businesses.
 							<br />
 							Click below to see our current services, or{" "}
