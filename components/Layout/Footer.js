@@ -21,9 +21,9 @@ const Page = ({ name, url, id }) => (
 
 export default function Footer() {
 	return (
-		<Box py={2} bgcolor="black" color="white">
+		<Box py={4} bgcolor="black" color="white">
 			<Container maxWidth="lg" component="footer">
-				<Typography variant="h3" component="h3">
+				<Typography variant="h4" component="h4" fontWeight="600">
 					Footer
 				</Typography>
 				{pages.map(Page)}

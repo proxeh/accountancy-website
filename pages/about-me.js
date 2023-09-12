@@ -1,22 +1,38 @@
-import Head from "next/head";
-import { Container, Typography } from "@mui/material";
+import PageHead from "../content/PageHead";
+import AboutMeContent from "../content/AboutMeContent";
+import {
+	Card,
+	CardContent,
+	Container,
+	Divider,
+	Paper,
+	Typography,
+} from "@mui/material";
 
 export default function AboutMe() {
 	return (
 		<div>
-			<Head>
-				<title>David McElhinney Accountancy</title>
-				<meta name="description" content="David McElhinney Accountancy" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+			<PageHead pageName="About Me" />
 
-			<main style={{ padding: "2rem 0" }}>
-				<Container maxWidth="lg">
-					<Typography variant="h4" component="h2" sx={{ textAlign: "center" }}>
-						About Me
-					</Typography>
-				</Container>
-			</main>
+			<Container maxWidth="lg" sx={{ padding: "2rem 0" }}>
+				<Typography
+					variant="h3"
+					component="h2"
+					textAlign="center"
+					fontWeight="600"
+					gutterBottom
+				>
+					About Me
+				</Typography>
+				<Divider sx={{ marginBottom: "2rem" }} />
+				<Paper>
+					<Card>
+						<CardContent>
+							<AboutMeContent />
+						</CardContent>
+					</Card>
+				</Paper>
+			</Container>
 		</div>
 	);
 }
