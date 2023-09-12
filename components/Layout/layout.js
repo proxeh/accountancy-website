@@ -5,11 +5,11 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
 	return (
-		<>
+		<main style={{ backgroundColor: "#eee" }}>
 			<NavBar />
 			<HeroImage />
 			{children}
 			<Footer />
-		</>
+		</main>
 	);
 }

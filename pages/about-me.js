@@ -14,30 +14,25 @@ export default function AboutMe() {
 		<div>
 			<PageHead pageName="About Me" />
 
-			<main>
-				<Container
-					maxWidth="lg"
-					sx={{ padding: "2rem 0", backgroundColor: "#CCC" }}
+			<Container maxWidth="lg" sx={{ padding: "2rem 0" }}>
+				<Typography
+					variant="h3"
+					component="h2"
+					textAlign="center"
+					fontWeight="600"
+					gutterBottom
 				>
-					<Typography
-						variant="h3"
-						component="h2"
-						textAlign="center"
-						fontWeight="600"
-						gutterBottom
-					>
-						About Me
-					</Typography>
-					<Divider sx={{ marginBottom: "2rem" }} />
-					<Paper>
-						<Card>
-							<CardContent>
-								<AboutMeContent />
-							</CardContent>
-						</Card>
-					</Paper>
-				</Container>
-			</main>
+					About Me
+				</Typography>
+				<Divider sx={{ marginBottom: "2rem" }} />
+				<Paper>
+					<Card>
+						<CardContent>
+							<AboutMeContent />
+						</CardContent>
+					</Card>
+				</Paper>
+			</Container>
 		</div>
 	);
 }
