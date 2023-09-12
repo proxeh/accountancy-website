@@ -6,7 +6,7 @@ export const pages = [
 	},
 	{
 		name: "Services",
-		url: "/our-services",
+		url: "/services",
 		id: 2,
 	},
 	{

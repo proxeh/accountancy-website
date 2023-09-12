@@ -16,7 +16,7 @@ export default function OurServicesCards() {
 	return (
 		<Box sx={{ background: "#ccc", py: "2rem" }}>
 			<Container maxWidth="lg">
-				<Box sx={{ flexGrow: 1 }} id="ourservices">
+				<Box sx={{ flexGrow: 1 }} id="myservices">
 					<Grid container spacing={2}>
 						<Grid item xs={12}>
 							<Typography
@@ -25,7 +25,7 @@ export default function OurServicesCards() {
 								textAlign="center"
 								gutterBottom
 							>
-								Our Services
+								My Services
 							</Typography>
 						</Grid>
 						{services.map((service, index) => {
@@ -72,7 +72,7 @@ export default function OurServicesCards() {
 								color="success"
 								size="large"
 								sx={{ fontWeight: "600" }}
-								onClick={() => Router.push("/our-services")}
+								onClick={() => Router.push("/services")}
 							>
 								See all current services
 							</Button>

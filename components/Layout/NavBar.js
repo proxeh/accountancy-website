@@ -40,7 +40,9 @@ function NavBar() {
 			onClick={handleCloseNavMenu}
 			sx={{ my: 2, color: "white", display: "block" }}
 		>
-			<Link href={`${url}`}>{name}</Link>
+			<Link href={`${url}`} title={name} aria-label={name}>
+				{name}
+			</Link>
 		</Button>
 	);
 	const MobilePage = ({ name, url, id }) => (

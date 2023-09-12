@@ -1,22 +1,26 @@
-import Head from "next/head";
+import PageHead from "../content/PageHead";
 import { Box, Container, Divider, Typography } from "@mui/material";
 import ContactForm from "../components/Contact/ContactForm";
 
 export default function ContactMe() {
 	return (
 		<div>
-			<Head>
-				<title>David McElhinney Accountancy - Contact Me</title>
-				<meta name="description" content="David McElhinney Accountancy" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
-			<main style={{ padding: "2rem 0" }}>
-				<Container maxWidth="lg">
-					<Typography variant="h4" component="h2" sx={{ textAlign: "center" }}>
+			<PageHead pageName="Contact Me" />
+			<main>
+				<Container
+					maxWidth="lg"
+					sx={{ padding: "2rem 0", backgroundColor: "#CCC" }}
+				>
+					<Typography
+						variant="h3"
+						component="h2"
+						textAlign="center"
+						fontWeight="600"
+						gutterBottom
+					>
 						Get in touch
 					</Typography>
-					<Divider />
+					<Divider sx={{ marginBottom: "2rem" }} />
 					<ContactForm />
 				</Container>
 			</main>

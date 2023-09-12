@@ -29,7 +29,12 @@ export default function HeroImage() {
 							borderRadius: "1rem",
 						}}
 					>
-						<Typography variant="h3" component="h1" gutterBottom>
+						<Typography
+							variant="h4"
+							component="h1"
+							fontWeight="700"
+							gutterBottom
+						>
 							David McElhinney Accountancy
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom>
@@ -39,8 +44,8 @@ export default function HeroImage() {
 							Click below to see our current services, or{" "}
 							<Link href="/contact-me">click here</Link> to get in touch today!
 						</Typography>
-						<Link href="#ourservices">
-							<Button variant="contained">Our Services</Button>
+						<Link href="#myservices">
+							<Button variant="contained">My Services</Button>
 						</Link>
 					</Card>
 				</Container>
